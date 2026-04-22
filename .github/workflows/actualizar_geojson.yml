@@ -5,14 +5,13 @@ on:
     - cron: '*/5 * * * *'
   workflow_dispatch:
 
-# ESTA ES LA PARTE QUE SOLUCIONA TU ERROR
 permissions:
-  contents: write  # Permite al script subir archivos al repositorio
+  contents: write
 
 jobs:
   ejecutar-script:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Descargar codigo del repositorio
         uses: actions/checkout@v4
@@ -35,16 +34,18 @@ jobs:
 
       - name: Guardar y subir cambios
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Añadimos los cambios
-          git add data_raw/ data_conv/ monitoreo_global.geojson || true
-          
-          # Hacemos el commit solo si hay cambios
-          if git diff --quiet && git diff --staged --quiet; then
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Agrega TODO lo que haya cambiado (evita errores de rutas inexistentes)
+          git add -A
+
+          # Si no hay cambios, salir sin error
+          if git diff --cached --quiet; then
             echo "Sin cambios detectados."
-          else
-            git commit -m "Auto-update: Datos $(date +'%Y-%m-%d %H:%M')"
-            git push
+            exit 0
           fi
+
+          # Commit y push
+          git commit -m "Auto-update: Datos $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push origin HEAD:${{ github.ref_name }}
