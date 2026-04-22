@@ -12,10 +12,10 @@
             },
             "properties": {
                 "vivienda": "Vivienda1 - Doctor",
-                "timestamp": "2026-04-22 10:12:39",
-                "potencia_total_W": 665.0,
-                "voltaje_avg_V": 66.7,
-                "energia_total_Wh": 9621.0
+                "timestamp": "2026-04-22 10:52:15",
+                "potencia_total_W": 696.7,
+                "voltaje_avg_V": 66.6,
+                "energia_total_Wh": 9650.0
             }
         }
     ]
