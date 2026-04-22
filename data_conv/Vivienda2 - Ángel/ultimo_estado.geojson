@@ -12,10 +12,10 @@
             },
             "properties": {
                 "vivienda": "Vivienda2 - \u00c1ngel",
-                "timestamp": "2026-04-22 10:50:09",
-                "potencia_total_W": 159.8,
-                "voltaje_avg_V": 132.5,
-                "energia_total_Wh": 184248.0
+                "timestamp": "2026-04-22 11:31:55",
+                "potencia_total_W": 134.4,
+                "voltaje_avg_V": 131.0,
+                "energia_total_Wh": 184256.0
             }
         }
     ]
