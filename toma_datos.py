@@ -1045,140 +1045,138 @@ print("💾 Guardado en dos salidas: data_raw (sin conversiones) y data_conv (co
 print("🧩 Además, se generarán archivos unificados por vivienda cuando aplique.")
 print("🗺️ También se generará automáticamente una tabla global y un GeoJSON global.")
 
+
+
+
 try:
-    while True:
-        ts = now_str()
+    ts = now_str()
 
-        print(f"\n================== RONDA {ts} ==================")
+    print(f"\n================== RONDA {ts} ==================")
 
-        for viv, sensores in VIVIENDAS.items():
-            print(f"\n🏠 {viv}")
+    for viv, sensores in VIVIENDAS.items():
+        print(f"\n🏠 {viv}")
 
-            # Acá se almacenan temporalmente las fases leídas en esta ronda
-            datos_unificacion_ronda = {}
+        # Acá se almacenan temporalmente las fases leídas en esta ronda
+        datos_unificacion_ronda = {}
 
-            for sensor_name, info in sensores.items():
-                tipo = info.get("tipo")
-                device_id = info.get("device_id")
+        for sensor_name, info in sensores.items():
+            tipo = info.get("tipo")
+            device_id = info.get("device_id")
 
-                if device_id is None or str(device_id).strip() == "":
-                    print(f"⏳ {sensor_name} ({tipo}): esperando device_id...")
-                    continue
+            if device_id is None or str(device_id).strip() == "":
+                print(f"⏳ {sensor_name} ({tipo}): esperando device_id...")
+                continue
 
-                getter = GETTERS.get(tipo)
-                if getter is None:
-                    print(f"⚠️ {sensor_name}: tipo desconocido '{tipo}'")
-                    continue
+            getter = GETTERS.get(tipo)
+            if getter is None:
+                print(f"⚠️ {sensor_name}: tipo desconocido '{tipo}'")
+                continue
 
-                datos_raw, datos_conv, err = getter(device_id, ts)
+            datos_raw, datos_conv, err = getter(device_id, ts)
 
-                if err or datos_raw is None or datos_conv is None:
-                    print(f"❌ {sensor_name} ({tipo}): error -> {err}")
-                    continue
+            if err or datos_raw is None or datos_conv is None:
+                print(f"❌ {sensor_name} ({tipo}): error -> {err}")
+                continue
 
-                if tipo == "V1EXTRA_DUAL":
-                    guardar_csv(DATA_RAW_FOLDER, viv, sensor_name, datos_raw)
+            if tipo == "V1EXTRA_DUAL":
+                guardar_csv(DATA_RAW_FOLDER, viv, sensor_name, datos_raw)
 
-                    cfg_uni = UNIFICACIONES.get(viv)
+                cfg_uni = UNIFICACIONES.get(viv)
 
-                    for sub_sensor_name, sub_datos in datos_conv.items():
-                        guardar_csv(DATA_CONV_FOLDER, viv, sub_sensor_name, sub_datos)
+                for sub_sensor_name, sub_datos in datos_conv.items():
+                    guardar_csv(DATA_CONV_FOLDER, viv, sub_sensor_name, sub_datos)
 
-                        if cfg_uni is not None:
-                            if sub_sensor_name == cfg_uni["fase_A"]:
-                                datos_unificacion_ronda["A"] = sub_datos
-                            elif sub_sensor_name == cfg_uni["fase_B"]:
-                                datos_unificacion_ronda["B"] = sub_datos
-
-                        print(
-                            f"✅ {sub_sensor_name}: "
-                            f"{float(sub_datos['voltage_V']):.1f}V | "
-                            f"{float(sub_datos['current_A']):.3f}A | "
-                            f"{float(sub_datos['power_W']):.1f}W | "
-                            f"PF={float(sub_datos['pf']):.2f} | "
-                            f"F={float(sub_datos['freq_Hz']):.2f}Hz | "
-                            f"E={sub_datos['energy_Wh']} | "
-                            f"Dir={sub_datos['direction']}"
-                        )
-
-                else:
-                    guardar_csv(DATA_RAW_FOLDER, viv, sensor_name, datos_raw)
-                    guardar_csv(DATA_CONV_FOLDER, viv, sensor_name, datos_conv)
-
-                    cfg_uni = UNIFICACIONES.get(viv)
                     if cfg_uni is not None:
-                        if sensor_name == cfg_uni["fase_A"]:
-                            datos_unificacion_ronda["A"] = datos_conv
-                        elif sensor_name == cfg_uni["fase_B"]:
-                            datos_unificacion_ronda["B"] = datos_conv
+                        if sub_sensor_name == cfg_uni["fase_A"]:
+                            datos_unificacion_ronda["A"] = sub_datos
+                        elif sub_sensor_name == cfg_uni["fase_B"]:
+                            datos_unificacion_ronda["B"] = sub_datos
 
-                    if tipo == "M1":
-                        print(
-                            f"✅ {sensor_name}: "
-                            f"A {float(datos_conv['voltaje_A(V)']):.1f}V "
-                            f"{float(datos_conv['corriente_A(A)']):.3f}A "
-                            f"{float(datos_conv['potencia_A(W)']):.1f}W | "
-                            f"B {float(datos_conv['voltaje_B(V)']):.1f}V "
-                            f"{float(datos_conv['corriente_B(A)']):.3f}A "
-                            f"{float(datos_conv['potencia_B(W)']):.1f}W"
-                        )
-                    else:
-                        print(
-                            f"✅ {sensor_name}: "
-                            f"{float(datos_conv['voltage_V']):.1f}V | "
-                            f"{float(datos_conv['current_A']):.3f}A | "
-                            f"{float(datos_conv['power_W']):.1f}W | "
-                            f"PF={float(datos_conv['pf']):.2f} | "
-                            f"F={float(datos_conv['freq_Hz']):.2f}Hz | "
-                            f"E={datos_conv['energy_Wh']}"
-                        )
-
-            # ---------------------------------------------------------
-            # CONSTRUCCIÓN DEL ARCHIVO UNIFICADO POR VIVIENDA
-            # ---------------------------------------------------------
-            cfg_uni = UNIFICACIONES.get(viv)
-            if cfg_uni is not None:
-                fase_a = datos_unificacion_ronda.get("A")
-                fase_b = datos_unificacion_ronda.get("B")
-
-                if fase_a is not None and fase_b is not None:
-                    fila_unificada = construir_fila_unificada(
-                        ts=ts,
-                        latitud=cfg_uni["latitud"],
-                        longitud=cfg_uni["longitud"],
-                        datos_fase_a=fase_a,
-                        datos_fase_b=fase_b,
+                    print(
+                        f"✅ {sub_sensor_name}: "
+                        f"{float(sub_datos['voltage_V']):.1f}V | "
+                        f"{float(sub_datos['current_A']):.3f}A | "
+                        f"{float(sub_datos['power_W']):.1f}W | "
+                        f"PF={float(sub_datos['pf']):.2f} | "
+                        f"F={float(sub_datos['freq_Hz']):.2f}Hz | "
+                        f"E={sub_datos['energy_Wh']} | "
+                        f"Dir={sub_datos['direction']}"
                     )
 
-                    guardar_csv_unificado(
-                        DATA_CONV_FOLDER,
-                        viv,
-                        cfg_uni["archivo_salida"],
-                        fila_unificada
-                    )
+            else:
+                guardar_csv(DATA_RAW_FOLDER, viv, sensor_name, datos_raw)
+                guardar_csv(DATA_CONV_FOLDER, viv, sensor_name, datos_conv)
 
-                    print(f"🧩 Archivo unificado actualizado: {cfg_uni['archivo_salida']}")
+                cfg_uni = UNIFICACIONES.get(viv)
+                if cfg_uni is not None:
+                    if sensor_name == cfg_uni["fase_A"]:
+                        datos_unificacion_ronda["A"] = datos_conv
+                    elif sensor_name == cfg_uni["fase_B"]:
+                        datos_unificacion_ronda["B"] = datos_conv
+
+                if tipo == "M1":
+                    print(
+                        f"✅ {sensor_name}: "
+                        f"A {float(datos_conv['voltaje_A(V)']):.1f}V "
+                        f"{float(datos_conv['corriente_A(A)']):.3f}A "
+                        f"{float(datos_conv['potencia_A(W)']):.1f}W | "
+                        f"B {float(datos_conv['voltaje_B(V)']):.1f}V "
+                        f"{float(datos_conv['corriente_B(A)']):.3f}A "
+                        f"{float(datos_conv['potencia_B(W)']):.1f}W"
+                    )
                 else:
-                    print("⚠️ No se pudo construir archivo unificado en esta ronda: falta Fase A o Fase B.")
+                    print(
+                        f"✅ {sensor_name}: "
+                        f"{float(datos_conv['voltage_V']):.1f}V | "
+                        f"{float(datos_conv['current_A']):.3f}A | "
+                        f"{float(datos_conv['power_W']):.1f}W | "
+                        f"PF={float(datos_conv['pf']):.2f} | "
+                        f"F={float(datos_conv['freq_Hz']):.2f}Hz | "
+                        f"E={datos_conv['energy_Wh']}"
+                    )
 
-        # -----------------------------------------------------------------
-        # ACTUALIZACIÓN DE GRÁFICAS
-        # -----------------------------------------------------------------
-        _ronda += 1
+        # ---------------------------------------------------------
+        # CONSTRUCCIÓN DEL ARCHIVO UNIFICADO POR VIVIENDA
+        # ---------------------------------------------------------
+        cfg_uni = UNIFICACIONES.get(viv)
+        if cfg_uni is not None:
+            fase_a = datos_unificacion_ronda.get("A")
+            fase_b = datos_unificacion_ronda.get("B")
 
-        if _ronda % GRAFICAR_CADA_N_RONDAS == 0:
-            graficar_estado_actual(DATA_CONV_FOLDER, VIVIENDAS)
+            if fase_a is not None and fase_b is not None:
+                fila_unificada = construir_fila_unificada(
+                    ts=ts,
+                    latitud=cfg_uni["latitud"],
+                    longitud=cfg_uni["longitud"],
+                    datos_fase_a=fase_a,
+                    datos_fase_b=fase_b,
+                )
 
-        # -----------------------------------------------------------------
-        # EXPORTACIÓN A GEOJSON POR CADA MEDIDOR UNIFICADO
-        # -----------------------------------------------------------------
-        exportar_geojson_por_medidor(DATA_CONV_FOLDER, UNIFICACIONES)
+                guardar_csv_unificado(
+                    DATA_CONV_FOLDER,
+                    viv,
+                    cfg_uni["archivo_salida"],
+                    fila_unificada
+                )
 
-        # -----------------------------------------------------------------
-        # ESPERA HASTA LA SIGUIENTE RONDA
-        # -----------------------------------------------------------------
-        print(f"\n⌛ Esperando {INTERVALO_MINUTOS} minuto(s)...")
-        time.sleep(INTERVALO_MINUTOS * 60)
+                print(f"🧩 Archivo unificado actualizado: {cfg_uni['archivo_salida']}")
+            else:
+                print("⚠️ No se pudo construir archivo unificado en esta ronda: falta Fase A o Fase B.")
+
+    # -----------------------------------------------------------------
+    # ACTUALIZACIÓN DE GRÁFICAS
+    # -----------------------------------------------------------------
+    _ronda += 1
+
+    if _ronda % GRAFICAR_CADA_N_RONDAS == 0:
+        graficar_estado_actual(DATA_CONV_FOLDER, VIVIENDAS)
+
+    # -----------------------------------------------------------------
+    # EXPORTACIÓN A GEOJSON POR CADA MEDIDOR UNIFICADO
+    # -----------------------------------------------------------------
+    exportar_geojson_por_medidor(DATA_CONV_FOLDER, UNIFICACIONES)
+
+    print("\n✅ Ejecución completada (una sola ronda).")
 
 except KeyboardInterrupt:
     print("\n🛑 Monitoreo detenido por el usuario.")
