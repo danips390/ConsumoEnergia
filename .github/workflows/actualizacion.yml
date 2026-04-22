@@ -1,0 +1,35 @@
+name: Run Jupyter Notebook Every 3 Minutes
+
+on:
+  schedule:
+    - cron: "*/1 * * * *"  # cada 1 minutos
+  workflow_dispatch:       # permite correrlo manualmente
+
+jobs:
+  run-notebook:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          pip install nbconvert nbformat ipykernel
+
+      - name: Execute notebook
+        run: |
+          jupyter nbconvert --to notebook --execute "CódigoTomaDatos V4.0.ipynb" --output "output.ipynb"
+
+      - name: Commit results (optional)
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git commit -m "Auto-run notebook" || echo "No changes"
+          git push
