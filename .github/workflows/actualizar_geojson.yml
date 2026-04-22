@@ -1,57 +1,51 @@
-name: Actualizar Monitoreo Tuya
+name: Cron de Monitoreo Energetico Tuya
 
 on:
   schedule:
-    # Se ejecuta cada 5 minutos (mínimo permitido estable en GitHub)
     - cron: '*/5 * * * *'
-  workflow_dispatch: # Permite ejecutarlo manualmente desde la pestaña Actions
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
-  build:
+  ejecutar-script:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout del repositorio
+      - name: Descargar codigo del repositorio
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0
 
-      - name: Configurar Python
+      - name: Instalar Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: Instalar dependencias
+      - name: Instalar librerias de Tuya y Pandas
         run: |
-          pip install tuya-connector-python pandas matplotlib ipython nbconvert
-          # Instalamos el kernel de python para que nbconvert pueda ejecutarlo
-          pip install ipykernel
-          python -m ipykernel install --user
+          python -m pip install --upgrade pip
+          pip install tuya-connector-python pandas
 
-      - name: Preparar entorno de carpetas
-        run: |
-          # Creamos las carpetas localmente ya que no hay Google Drive
-          mkdir -p data_raw
-          mkdir -p data_conv
-
-      - name: Ejecutar Notebook
+      - name: Ejecutar toma_datos.py
         env:
-          # Puedes pasar tus llaves como secretos de GitHub por seguridad
           TUYA_ACCESS_ID: ${{ secrets.TUYA_ACCESS_ID }}
           TUYA_ACCESS_KEY: ${{ secrets.TUYA_ACCESS_KEY }}
-        run: |
-          # Modificamos el notebook al vuelo para que no intente montar Google Drive
-          sed -i 's/drive.mount/# drive.mount/g' "CódigoTomaDatos V4.0.ipynb"
-          sed -i 's|/content/gdrive/MyDrive/Monitoreo_Tuya|.|g' "CódigoTomaDatos V4.0.ipynb"
-          
-          # Ejecutamos el notebook (solo una ronda para que no se quede en bucle infinito)
-          # NOTA: Asegúrate que tu script no tenga un "while True" infinito 
-          # o quítalo para que termine después de una ejecución.
-          jupyter nbconvert --to notebook --execute "CódigoTomaDatos V4.0.ipynb" --output ejecutado.ipynb
+        run: python toma_datos.py
 
-      - name: Commit y Push de los datos actualizados
+      - name: Guardar y subir cambios
         run: |
-          git config --global user.name "GitHub Actions Bot"
-          git config --global user.email "actions@github.com"
-          git add data_raw/* data_conv/*
-          # Solo hace commit si hay cambios detectados
-          git diff-index --quiet HEAD || git commit -m "Actualización automática GeoJSON: $(date)"
-          git push
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "Sin cambios detectados."
+            exit 0
+          fi
+
+          git commit -m "Auto-update: Datos de energia $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push origin HEAD:${{ github.ref_name }}
