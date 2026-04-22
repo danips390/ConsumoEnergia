@@ -1,0 +1,22 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -100.2950499,
+                    25.6189821
+                ]
+            },
+            "properties": {
+                "vivienda": "Vivienda1 - Doctor",
+                "timestamp": "2026-04-22 10:10:39",
+                "potencia_total_W": 511.4,
+                "voltaje_avg_V": 66.7,
+                "energia_total_Wh": 9621.0
+            }
+        }
+    ]
+}
