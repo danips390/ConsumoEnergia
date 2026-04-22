@@ -12,7 +12,7 @@
       },
       "properties": {
         "id_punto": "25.646641_-100.288357",
-        "n_registros": 2,
+        "n_registros": 3,
         "voltage_V_A": 0,
         "current_A_A": 0,
         "power_W_A": 0,
@@ -31,8 +31,8 @@
         "energy_Wh_B_delta_ultimas_2": 0,
         "energy_reverse_Wh_A_delta_ultimas_2": null,
         "energy_reverse_Wh_B_delta_ultimas_2": null,
-        "timestamp_ultimo": "2026-04-22 12:30:00",
-        "timestamp_penultimo": "2026-04-22 12:29:00"
+        "timestamp_ultimo": "2026-04-22 12:38:00",
+        "timestamp_penultimo": "2026-04-22 12:30:00"
       }
     }
   ]
