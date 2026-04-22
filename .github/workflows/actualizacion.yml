@@ -1,9 +1,9 @@
-name: Run Jupyter Notebook Every 3 Minutes
+name: Run Notebook and Export GeoJSON
 
 on:
   schedule:
-    - cron: "*/1 * * * *"  # cada 1 minutos
-  workflow_dispatch:       # permite correrlo manualmente
+    - cron: "*/1  * * * *"
+  workflow_dispatch:
 
 jobs:
   run-notebook:
@@ -20,16 +20,26 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install nbconvert nbformat ipykernel
+          pip install nbconvert nbformat ipykernel geopandas pandas shapely fiona pyproj
 
       - name: Execute notebook
         run: |
-          jupyter nbconvert --to notebook --execute "CódigoTomaDatos V4.0.ipynb" --output "output.ipynb"
+          jupyter nbconvert --to notebook --execute "CódigoTomaDatos V4.0.ipynb" --output executed.ipynb
 
-      - name: Commit results (optional)
+      - name: Verify GeoJSON exists
+        run: |
+          ls -lh *.geojson || echo "No GeoJSON found"
+
+      - name: Upload GeoJSON as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: geojson-output
+          path: "*.geojson"
+
+      - name: Commit GeoJSON to repo (optional)
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
-          git add .
-          git commit -m "Auto-run notebook" || echo "No changes"
+          git add *.geojson || echo "No files"
+          git commit -m "Update GeoJSON" || echo "No changes"
           git push
