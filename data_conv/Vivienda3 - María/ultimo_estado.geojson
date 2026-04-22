@@ -12,9 +12,9 @@
             },
             "properties": {
                 "vivienda": "Vivienda3 - Mar\u00eda",
-                "timestamp": "2026-04-22 10:12:39",
+                "timestamp": "2026-04-22 10:50:09",
                 "potencia_total_W": 0.0,
-                "voltaje_avg_V": 123.45,
+                "voltaje_avg_V": 122.8,
                 "energia_total_Wh": 0.0
             }
         }
