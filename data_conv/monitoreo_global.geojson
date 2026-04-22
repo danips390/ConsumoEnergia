@@ -12,10 +12,10 @@
             },
             "properties": {
                 "vivienda": "Vivienda1 - Doctor",
-                "timestamp": "2026-04-22 11:31:55",
-                "potencia_total_W": 1109.8,
+                "timestamp": "2026-04-22 11:36:35",
+                "potencia_total_W": 1205.0,
                 "voltaje_avg_V": 66.55,
-                "energia_total_Wh": 9681.0
+                "energia_total_Wh": 9687.0
             }
         },
         {
@@ -29,9 +29,9 @@
             },
             "properties": {
                 "vivienda": "Vivienda2 - \u00c1ngel",
-                "timestamp": "2026-04-22 11:31:55",
-                "potencia_total_W": 134.4,
-                "voltaje_avg_V": 131.0,
+                "timestamp": "2026-04-22 11:36:35",
+                "potencia_total_W": 128.9,
+                "voltaje_avg_V": 130.7,
                 "energia_total_Wh": 184256.0
             }
         },
@@ -46,7 +46,7 @@
             },
             "properties": {
                 "vivienda": "Vivienda3 - Mar\u00eda",
-                "timestamp": "2026-04-22 11:31:55",
+                "timestamp": "2026-04-22 11:36:35",
                 "potencia_total_W": 0.0,
                 "voltaje_avg_V": 122.75,
                 "energia_total_Wh": 0.0
