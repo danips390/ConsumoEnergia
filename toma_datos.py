@@ -71,7 +71,6 @@ y posterior análisis de consumo energético.
 # ======================================================================================
 
 
-
 import tuya_connector  # noqa: F401
 
 import os
