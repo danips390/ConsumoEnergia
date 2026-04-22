@@ -177,8 +177,8 @@ API_ENDPOINT = "https://openapi.tuyaus.com"
 # -----------------------------------------------------------------------------
 # CREDENCIALES
 # -----------------------------------------------------------------------------
-os.environ["TUYA_ACCESS_ID"] = "frenwewgpwrv4fumy4y3"
-os.environ["TUYA_ACCESS_KEY"] = "3665c6c852814a2e83065db3c72310b2"
+os.environ["TUYA_ACCESS_ID"] = "devg78x5vga3syrxjdsg"
+os.environ["TUYA_ACCESS_KEY"] = "723b31007c6c48c7bbac834688130ca7"
 
 ACCESS_ID = os.getenv("TUYA_ACCESS_ID")
 ACCESS_KEY = os.getenv("TUYA_ACCESS_KEY")
