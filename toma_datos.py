@@ -167,7 +167,7 @@ BASE_DIR = r"C:\Users\TU_USUARIO\Documents\Monitoreo_Tuya"
 DATA_RAW_FOLDER = os.path.join(BASE_DIR, "data_raw")
 DATA_CONV_FOLDER = os.path.join(BASE_DIR, "data_conv")
 
-#FLAG_CONSUMOS_INICIALES = os.path.join(DATA_CONV_FOLDER, "_consumos_iniciales_usados.flag")
+FLAG_CONSUMOS_INICIALES = os.path.join(DATA_CONV_FOLDER, "_consumos_iniciales_usados.flag")
 
 # ======================================================================================
 # 4) CONFIGURACIÓN DE VIVIENDAS Y SENSORES
