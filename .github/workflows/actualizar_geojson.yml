@@ -30,7 +30,7 @@ jobs:
       - name: Instalar librerías
         run: |
           python -m pip install --upgrade pip
-          pip install matplotlib ipython
+          pip install matplotlib ipython tuya-connector-python
 
 
 
