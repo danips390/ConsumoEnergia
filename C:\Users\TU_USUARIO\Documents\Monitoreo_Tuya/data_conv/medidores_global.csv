@@ -1,0 +1,4 @@
+﻿latitud,longitud,timestamp,day,month,year,hour,minute,voltage_V_A,current_A_A,power_W_A,pf_A,freq_Hz_A,energy_Wh_A,energy_reverse_Wh_A,direction_A,voltage_V_B,current_A_B,power_W_B,pf_B,freq_Hz_B,energy_Wh_B,energy_reverse_Wh_B,direction_B,vivienda,archivo_origen
+25.618982,-100.29505,2026-04-24 16:14:00,24,4,2026,16,14,131.5,5.004,568.6,0.86,58.87,5873,5750.0,REVERSE,131.5,6.257,606.9,0.73,58.87,6113,3860.0,FORWARD,Vivienda1 - Doctor,Medidor1.csv
+25.646641,-100.288357,2026-04-24 16:14:00,24,4,2026,16,14,128.4,3.463,443.6,0.99,59.23,162081,,,127.9,0.044,4.2,0.75,59.16,23487,,,Vivienda2 - Ángel,Medidor2.csv
+25.648629,-100.279387,2026-04-24 16:14:00,24,4,2026,16,14,120.1,2.91,149.0,0.42,59.2,39464,,,118.6,1.03,102.0,0.82,58.98,54009,,,Vivienda3 - María,Medidor3.csv

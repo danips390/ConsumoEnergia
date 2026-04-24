@@ -1,0 +1,2 @@
+﻿latitud,longitud,timestamp,day,month,year,hour,minute,voltage_V_A,current_A_A,power_W_A,pf_A,freq_Hz_A,energy_Wh_A,energy_reverse_Wh_A,direction_A,voltage_V_B,current_A_B,power_W_B,pf_B,freq_Hz_B,energy_Wh_B,energy_reverse_Wh_B,direction_B,id_punto
+25.618982,-100.29505,2026-04-24 16:14:00,24,4,2026,16,14,131.5,5.004,568.6,0.86,58.87,5873,5750,REVERSE,131.5,6.257,606.9,0.73,58.87,6113,3860,FORWARD,25.618982_-100.29505

@@ -1,0 +1,125 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.29505,
+          25.618982
+        ]
+      },
+      "properties": {
+        "id_punto": "25.618982_-100.29505",
+        "n_registros": 1,
+        "voltage_V_A": 131.5,
+        "current_A_A": 5.004,
+        "power_W_A": 568.6,
+        "pf_A": 0.86,
+        "freq_Hz_A": 58.87,
+        "energy_Wh_A": 5873,
+        "voltage_V_B": 131.5,
+        "current_A_B": 6.257,
+        "power_W_B": 606.9,
+        "pf_B": 0.73,
+        "freq_Hz_B": 58.87,
+        "energy_Wh_B": 6113,
+        "energy_reverse_Wh_A": 5750.0,
+        "energy_reverse_Wh_B": 3860.0,
+        "energy_Wh_A_delta_ultimas_2": null,
+        "energy_Wh_B_delta_ultimas_2": null,
+        "energy_reverse_Wh_A_delta_ultimas_2": null,
+        "energy_reverse_Wh_B_delta_ultimas_2": null,
+        "energy_Wh_delta_total_ultimas_2": null,
+        "energy_reverse_Wh_delta_total_ultimas_2": null,
+        "timestamp_ultimo": "2026-04-24 16:14:00",
+        "timestamp_penultimo": null,
+        "direction_A": "REVERSE",
+        "direction_B": "FORWARD",
+        "vivienda": "Vivienda1 - Doctor",
+        "archivo_origen": "Medidor1.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.288357,
+          25.646641
+        ]
+      },
+      "properties": {
+        "id_punto": "25.646641_-100.288357",
+        "n_registros": 1,
+        "voltage_V_A": 128.4,
+        "current_A_A": 3.463,
+        "power_W_A": 443.6,
+        "pf_A": 0.99,
+        "freq_Hz_A": 59.23,
+        "energy_Wh_A": 162081,
+        "voltage_V_B": 127.9,
+        "current_A_B": 0.044,
+        "power_W_B": 4.2,
+        "pf_B": 0.75,
+        "freq_Hz_B": 59.16,
+        "energy_Wh_B": 23487,
+        "energy_reverse_Wh_A": null,
+        "energy_reverse_Wh_B": null,
+        "energy_Wh_A_delta_ultimas_2": null,
+        "energy_Wh_B_delta_ultimas_2": null,
+        "energy_reverse_Wh_A_delta_ultimas_2": null,
+        "energy_reverse_Wh_B_delta_ultimas_2": null,
+        "energy_Wh_delta_total_ultimas_2": null,
+        "energy_reverse_Wh_delta_total_ultimas_2": null,
+        "timestamp_ultimo": "2026-04-24 16:14:00",
+        "timestamp_penultimo": null,
+        "direction_A": null,
+        "direction_B": null,
+        "vivienda": "Vivienda2 - Ángel",
+        "archivo_origen": "Medidor2.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.279387,
+          25.648629
+        ]
+      },
+      "properties": {
+        "id_punto": "25.648629_-100.279387",
+        "n_registros": 1,
+        "voltage_V_A": 120.1,
+        "current_A_A": 2.91,
+        "power_W_A": 149.0,
+        "pf_A": 0.42,
+        "freq_Hz_A": 59.2,
+        "energy_Wh_A": 39464,
+        "voltage_V_B": 118.6,
+        "current_A_B": 1.03,
+        "power_W_B": 102.0,
+        "pf_B": 0.82,
+        "freq_Hz_B": 58.98,
+        "energy_Wh_B": 54009,
+        "energy_reverse_Wh_A": null,
+        "energy_reverse_Wh_B": null,
+        "energy_Wh_A_delta_ultimas_2": null,
+        "energy_Wh_B_delta_ultimas_2": null,
+        "energy_reverse_Wh_A_delta_ultimas_2": null,
+        "energy_reverse_Wh_B_delta_ultimas_2": null,
+        "energy_Wh_delta_total_ultimas_2": null,
+        "energy_reverse_Wh_delta_total_ultimas_2": null,
+        "timestamp_ultimo": "2026-04-24 16:14:00",
+        "timestamp_penultimo": null,
+        "direction_A": null,
+        "direction_B": null,
+        "vivienda": "Vivienda3 - María",
+        "archivo_origen": "Medidor3.csv"
+      }
+    }
+  ]
+}

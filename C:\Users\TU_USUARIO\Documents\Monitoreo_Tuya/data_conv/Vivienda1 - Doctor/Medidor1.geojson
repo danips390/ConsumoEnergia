@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.29505,
+          25.618982
+        ]
+      },
+      "properties": {
+        "id_punto": "25.618982_-100.29505",
+        "n_registros": 1,
+        "voltage_V_A": 131.5,
+        "current_A_A": 5.004,
+        "power_W_A": 568.6,
+        "pf_A": 0.86,
+        "freq_Hz_A": 58.87,
+        "energy_Wh_A": 5873,
+        "voltage_V_B": 131.5,
+        "current_A_B": 6.257,
+        "power_W_B": 606.9,
+        "pf_B": 0.73,
+        "freq_Hz_B": 58.87,
+        "energy_Wh_B": 6113,
+        "energy_reverse_Wh_A": 5750,
+        "energy_reverse_Wh_B": 3860,
+        "energy_Wh_A_delta_ultimas_2": null,
+        "energy_Wh_B_delta_ultimas_2": null,
+        "energy_reverse_Wh_A_delta_ultimas_2": null,
+        "energy_reverse_Wh_B_delta_ultimas_2": null,
+        "energy_Wh_delta_total_ultimas_2": null,
+        "energy_reverse_Wh_delta_total_ultimas_2": null,
+        "timestamp_ultimo": "2026-04-24 16:14:00",
+        "timestamp_penultimo": null,
+        "direction_A": "REVERSE",
+        "direction_B": "FORWARD"
+      }
+    }
+  ]
+}
