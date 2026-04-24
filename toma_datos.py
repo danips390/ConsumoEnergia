@@ -83,6 +83,7 @@ from zoneinfo import ZoneInfo
 import pandas as pd
 import matplotlib.pyplot as plt
 from IPython.display import clear_output
+from tuya_connector import TuyaOpenAPI
 
 # ======================================================================================
 # 2) PARÁMETROS DE VISUALIZACIÓN EN VIVO
