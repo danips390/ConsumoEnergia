@@ -1331,7 +1331,7 @@ def graficar_promedios_consumo_horario_disponible(data_folder_conv, unificacione
         tabla["consumo_promedio_Wh"] = tabla["consumo_promedio_Wh"].round(2)
         tabla["consumo_promedio_kWh"] = tabla["consumo_promedio_kWh"].round(4)
 
-        display(tabla)
+       
 
         plt.figure(figsize=(11, 4))
         plt.plot(
