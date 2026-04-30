@@ -1,0 +1,2 @@
+﻿latitud;longitud;timestamp;day;month;year;hour;minute;voltage_V_A;current_A_A;power_W_A;pf_A;freq_Hz_A;energy_Wh_A;voltage_V_B;current_A_B;power_W_B;pf_B;freq_Hz_B;energy_Wh_B
+25,650309;-100,278294;30/4/2026 14:09;30;4;2026;14;9;120,5;24,93;1991;0,66;58,87;1256;0;24,92;2063;0,66;58,87;1259

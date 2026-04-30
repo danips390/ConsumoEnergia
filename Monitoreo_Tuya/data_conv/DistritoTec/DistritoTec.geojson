@@ -1,0 +1,61 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.293008,
+          25.651085
+        ]
+      },
+      "properties": {
+        "id_punto": "25.651085_-100.293008",
+        "n_registros": 1,
+        "timestamp_ultimo": "2026-04-30 14:09:00",
+        "timestamp_penultimo": null,
+        "voltage_V_A": 127.7,
+        "current_A_A": 91.76,
+        "power_W_A": 6786,
+        "pf_A": 0.57,
+        "freq_Hz_A": 58.85,
+        "energy_Wh_A": 6077,
+        "energy_reverse_Wh_A": null,
+        "energy_Wh_A_delta_ultimas_2": null,
+        "energy_reverse_Wh_A_delta_ultimas_2": null,
+        "voltage_V_B": 0,
+        "current_A_B": 31.2,
+        "power_W_B": 3346,
+        "pf_B": 0.83,
+        "freq_Hz_B": 58.85,
+        "energy_Wh_B": 4357,
+        "energy_reverse_Wh_B": null,
+        "energy_Wh_B_delta_ultimas_2": null,
+        "energy_reverse_Wh_B_delta_ultimas_2": null,
+        "voltage_V_C": 130.9,
+        "current_A_C": 2.914,
+        "power_W_C": 266,
+        "pf_C": 0.69,
+        "freq_Hz_C": 58.87,
+        "energy_Wh_C": 12674,
+        "energy_reverse_Wh_C": 8296,
+        "energy_Wh_C_delta_ultimas_2": null,
+        "energy_reverse_Wh_C_delta_ultimas_2": null,
+        "direction_C": "REVERSE",
+        "voltage_V_D": 130.9,
+        "current_A_D": 4.075,
+        "power_W_D": 404.9,
+        "pf_D": 0.75,
+        "freq_Hz_D": 58.87,
+        "energy_Wh_D": 9111,
+        "energy_reverse_Wh_D": 9725,
+        "energy_Wh_D_delta_ultimas_2": null,
+        "energy_reverse_Wh_D_delta_ultimas_2": null,
+        "direction_D": "FORWARD",
+        "energy_Wh_delta_total_ultimas_2": null,
+        "energy_reverse_Wh_delta_total_ultimas_2": null
+      }
+    }
+  ]
+}

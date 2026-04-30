@@ -1,0 +1,2 @@
+timestamp,voltage_V,current_A,power_W,pf,freq_Hz,energy_Wh
+2026-04-30 14:09:56,120.5,24.93,1991,0.66,58.87,1256

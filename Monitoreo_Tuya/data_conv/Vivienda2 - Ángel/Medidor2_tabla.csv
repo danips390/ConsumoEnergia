@@ -1,0 +1,2 @@
+﻿latitud,longitud,timestamp,day,month,year,hour,minute,voltage_V_A,current_A_A,power_W_A,pf_A,freq_Hz_A,energy_Wh_A,voltage_V_B,current_A_B,power_W_B,pf_B,freq_Hz_B,energy_Wh_B,id_punto
+25.646641,-100.288357,2026-04-30 14:09:00,30,4,2026,14,9,128.4,2.252,231.7,0.8,59.18,169305,126,0.043,4.1,0.75,59.15,26313,25.646641_-100.288357
