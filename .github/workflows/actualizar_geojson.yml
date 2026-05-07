@@ -2,7 +2,7 @@ name: Cron de Monitoreo Energetico Tuya
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/20 * * * *'
   workflow_dispatch:
 
 permissions:
