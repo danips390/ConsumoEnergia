@@ -12,9 +12,9 @@
       },
       "properties": {
         "id_punto": "25.618982_-100.29505",
-        "n_registros": 135,
-        "timestamp_ultimo": "2026-05-09 05:14:00",
-        "timestamp_penultimo": "2026-05-09 04:05:00",
+        "n_registros": 136,
+        "timestamp_ultimo": "2026-05-09 06:05:00",
+        "timestamp_penultimo": "2026-05-09 05:14:00",
         "voltage_V_A": 0.0,
         "current_A_A": 0.0,
         "power_W_A": 0.0,
@@ -70,9 +70,10 @@
         "consume2_3": 0.0,
         "consume4_5": 0.0,
         "consume5_6": 0.0,
+        "consume6_7": 0.0,
         "consumo_ultimo_dia_kWh": 0.607,
         "timestamp_inicio_consumos": "2026-05-08 08:00:00",
-        "timestamp_fin_consumos": "2026-05-09 05:00:00",
+        "timestamp_fin_consumos": "2026-05-09 06:00:00",
         "vivienda": "Vivienda1 - Doctor",
         "archivo_origen": "Medidor1.csv"
       }
@@ -88,9 +89,9 @@
       },
       "properties": {
         "id_punto": "25.645697_-100.286587",
-        "n_registros": 135,
-        "timestamp_ultimo": "2026-05-09 05:14:00",
-        "timestamp_penultimo": "2026-05-09 04:05:00",
+        "n_registros": 136,
+        "timestamp_ultimo": "2026-05-09 06:05:00",
+        "timestamp_penultimo": "2026-05-09 05:14:00",
         "voltage_V_A": 0.0,
         "current_A_A": 0.0,
         "power_W_A": 0.0,
@@ -146,9 +147,10 @@
         "consume2_3": 0.0,
         "consume4_5": 0.0,
         "consume5_6": 0.0,
+        "consume6_7": 0.0,
         "consumo_ultimo_dia_kWh": 0.449,
         "timestamp_inicio_consumos": "2026-05-08 08:00:00",
-        "timestamp_fin_consumos": "2026-05-09 05:00:00",
+        "timestamp_fin_consumos": "2026-05-09 06:00:00",
         "vivienda": "JIH-V8V9",
         "archivo_origen": "JIH-V8V9.csv"
       }
@@ -164,9 +166,9 @@
       },
       "properties": {
         "id_punto": "25.646641_-100.288357",
-        "n_registros": 135,
-        "timestamp_ultimo": "2026-05-09 05:14:00",
-        "timestamp_penultimo": "2026-05-09 04:05:00",
+        "n_registros": 136,
+        "timestamp_ultimo": "2026-05-09 06:05:00",
+        "timestamp_penultimo": "2026-05-09 05:14:00",
         "voltage_V_A": 0.0,
         "current_A_A": 0.0,
         "power_W_A": 0.0,
@@ -222,9 +224,10 @@
         "consume2_3": 0.0,
         "consume4_5": 0.0,
         "consume5_6": 0.0,
+        "consume6_7": 0.0,
         "consumo_ultimo_dia_kWh": 0.579,
         "timestamp_inicio_consumos": "2026-05-08 08:00:00",
-        "timestamp_fin_consumos": "2026-05-09 05:00:00",
+        "timestamp_fin_consumos": "2026-05-09 06:00:00",
         "vivienda": "Vivienda2 - Ángel",
         "archivo_origen": "Medidor2.csv"
       }
@@ -240,9 +243,9 @@
       },
       "properties": {
         "id_punto": "25.648629_-100.279387",
-        "n_registros": 135,
-        "timestamp_ultimo": "2026-05-09 05:14:00",
-        "timestamp_penultimo": "2026-05-09 04:05:00",
+        "n_registros": 136,
+        "timestamp_ultimo": "2026-05-09 06:05:00",
+        "timestamp_penultimo": "2026-05-09 05:14:00",
         "voltage_V_A": 0.0,
         "current_A_A": 0.0,
         "power_W_A": 0.0,
@@ -298,9 +301,10 @@
         "consume2_3": 0.0,
         "consume4_5": 0.0,
         "consume5_6": 0.0,
+        "consume6_7": 0.0,
         "consumo_ultimo_dia_kWh": 0.185,
         "timestamp_inicio_consumos": "2026-05-08 08:00:00",
-        "timestamp_fin_consumos": "2026-05-09 05:00:00",
+        "timestamp_fin_consumos": "2026-05-09 06:00:00",
         "vivienda": "Vivienda3 - María",
         "archivo_origen": "Medidor3.csv"
       }
@@ -316,9 +320,9 @@
       },
       "properties": {
         "id_punto": "25.650309_-100.278294",
-        "n_registros": 135,
-        "timestamp_ultimo": "2026-05-09 05:14:00",
-        "timestamp_penultimo": "2026-05-09 04:05:00",
+        "n_registros": 136,
+        "timestamp_ultimo": "2026-05-09 06:05:00",
+        "timestamp_penultimo": "2026-05-09 05:14:00",
         "voltage_V_A": 0.0,
         "current_A_A": 0.0,
         "power_W_A": 0.0,
@@ -374,9 +378,10 @@
         "consume2_3": 0.0,
         "consume4_5": 0.0,
         "consume5_6": 0.0,
+        "consume6_7": 0.0,
         "consumo_ultimo_dia_kWh": 0.615,
         "timestamp_inicio_consumos": "2026-05-08 08:00:00",
-        "timestamp_fin_consumos": "2026-05-09 05:00:00",
+        "timestamp_fin_consumos": "2026-05-09 06:00:00",
         "vivienda": "JIH-V7",
         "archivo_origen": "JIH-V7.csv"
       }
@@ -392,9 +397,9 @@
       },
       "properties": {
         "id_punto": "25.651085_-100.293008",
-        "n_registros": 135,
-        "timestamp_ultimo": "2026-05-09 05:14:00",
-        "timestamp_penultimo": "2026-05-09 04:05:00",
+        "n_registros": 136,
+        "timestamp_ultimo": "2026-05-09 06:05:00",
+        "timestamp_penultimo": "2026-05-09 05:14:00",
         "voltage_V_A": 0.0,
         "current_A_A": 0.0,
         "power_W_A": 0.0,
@@ -450,9 +455,10 @@
         "consume2_3": 0.0,
         "consume4_5": 0.0,
         "consume5_6": 0.0,
+        "consume6_7": 0.0,
         "consumo_ultimo_dia_kWh": 2.073,
         "timestamp_inicio_consumos": "2026-05-08 08:00:00",
-        "timestamp_fin_consumos": "2026-05-09 05:00:00",
+        "timestamp_fin_consumos": "2026-05-09 06:00:00",
         "vivienda": "DistritoTec",
         "archivo_origen": "DistritoTec.csv"
       }
@@ -468,9 +474,9 @@
       },
       "properties": {
         "id_punto": "25.651742_-100.280182",
-        "n_registros": 135,
-        "timestamp_ultimo": "2026-05-09 05:14:00",
-        "timestamp_penultimo": "2026-05-09 04:05:00",
+        "n_registros": 136,
+        "timestamp_ultimo": "2026-05-09 06:05:00",
+        "timestamp_penultimo": "2026-05-09 05:14:00",
         "voltage_V_A": 0.0,
         "current_A_A": 0.0,
         "power_W_A": 0.0,
@@ -526,9 +532,10 @@
         "consume2_3": 0.0,
         "consume4_5": 0.0,
         "consume5_6": 0.0,
+        "consume6_7": 0.0,
         "consumo_ultimo_dia_kWh": 0.269,
         "timestamp_inicio_consumos": "2026-05-08 08:00:00",
-        "timestamp_fin_consumos": "2026-05-09 05:00:00",
+        "timestamp_fin_consumos": "2026-05-09 06:00:00",
         "vivienda": "JIH-V",
         "archivo_origen": "JIH-V.csv"
       }
@@ -544,9 +551,9 @@
       },
       "properties": {
         "id_punto": "25.657228_-100.291879",
-        "n_registros": 135,
-        "timestamp_ultimo": "2026-05-09 05:14:00",
-        "timestamp_penultimo": "2026-05-09 04:05:00",
+        "n_registros": 136,
+        "timestamp_ultimo": "2026-05-09 06:05:00",
+        "timestamp_penultimo": "2026-05-09 05:14:00",
         "voltage_V_A": 0.0,
         "current_A_A": 0.0,
         "power_W_A": 0.0,
@@ -602,9 +609,10 @@
         "consume2_3": 0.0,
         "consume4_5": 0.0,
         "consume5_6": 0.0,
+        "consume6_7": 0.0,
         "consumo_ultimo_dia_kWh": 0.539,
         "timestamp_inicio_consumos": "2026-05-08 08:00:00",
-        "timestamp_fin_consumos": "2026-05-09 05:00:00",
+        "timestamp_fin_consumos": "2026-05-09 06:00:00",
         "vivienda": "JIH-V1V2",
         "archivo_origen": "JIH-V1V2.csv"
       }
@@ -620,9 +628,9 @@
       },
       "properties": {
         "id_punto": "25.657299_-100.293267",
-        "n_registros": 135,
-        "timestamp_ultimo": "2026-05-09 05:14:00",
-        "timestamp_penultimo": "2026-05-09 04:05:00",
+        "n_registros": 136,
+        "timestamp_ultimo": "2026-05-09 06:05:00",
+        "timestamp_penultimo": "2026-05-09 05:14:00",
         "voltage_V_A": 0.0,
         "current_A_A": 0.0,
         "power_W_A": 0.0,
@@ -678,9 +686,10 @@
         "consume2_3": 0.0,
         "consume4_5": 0.0,
         "consume5_6": 0.0,
+        "consume6_7": 0.0,
         "consumo_ultimo_dia_kWh": 0.334,
         "timestamp_inicio_consumos": "2026-05-08 08:00:00",
-        "timestamp_fin_consumos": "2026-05-09 05:00:00",
+        "timestamp_fin_consumos": "2026-05-09 06:00:00",
         "vivienda": "JIH-V5",
         "archivo_origen": "JIH-V5.csv"
       }
@@ -696,9 +705,9 @@
       },
       "properties": {
         "id_punto": "25.658877_-100.292083",
-        "n_registros": 135,
-        "timestamp_ultimo": "2026-05-09 05:14:00",
-        "timestamp_penultimo": "2026-05-09 04:05:00",
+        "n_registros": 136,
+        "timestamp_ultimo": "2026-05-09 06:05:00",
+        "timestamp_penultimo": "2026-05-09 05:14:00",
         "voltage_V_A": 0.0,
         "current_A_A": 0.0,
         "power_W_A": 0.0,
@@ -754,9 +763,10 @@
         "consume2_3": 0.0,
         "consume4_5": 0.0,
         "consume5_6": 0.0,
+        "consume6_7": 0.0,
         "consumo_ultimo_dia_kWh": 1.44,
         "timestamp_inicio_consumos": "2026-05-08 08:00:00",
-        "timestamp_fin_consumos": "2026-05-09 05:00:00",
+        "timestamp_fin_consumos": "2026-05-09 06:00:00",
         "vivienda": "JIH-V3A",
         "archivo_origen": "JIH-V3A.csv"
       }
@@ -772,9 +782,9 @@
       },
       "properties": {
         "id_punto": "25.664247_-100.293495",
-        "n_registros": 135,
-        "timestamp_ultimo": "2026-05-09 05:14:00",
-        "timestamp_penultimo": "2026-05-09 04:05:00",
+        "n_registros": 136,
+        "timestamp_ultimo": "2026-05-09 06:05:00",
+        "timestamp_penultimo": "2026-05-09 05:14:00",
         "voltage_V_A": 0.0,
         "current_A_A": 0.0,
         "power_W_A": 0.0,
@@ -830,9 +840,10 @@
         "consume2_3": 0.0,
         "consume4_5": 0.0,
         "consume5_6": 0.0,
+        "consume6_7": 0.0,
         "consumo_ultimo_dia_kWh": 0.0,
         "timestamp_inicio_consumos": "2026-05-08 08:00:00",
-        "timestamp_fin_consumos": "2026-05-09 05:00:00",
+        "timestamp_fin_consumos": "2026-05-09 06:00:00",
         "vivienda": "JIH-V3",
         "archivo_origen": "JIH-V3.csv"
       }
