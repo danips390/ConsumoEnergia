@@ -1391,53 +1391,7 @@ def calcular_promedio_consumo_horario_disponible(path_csv):
 
     return df_h, df_prom
 
-def graficar_promedios_consumo_horario_disponible(data_folder_conv, unificaciones):
-    """
-    Grafica los promedios de consumo horario disponibles para cada vivienda.
-    """
 
-    print("\n⏱️ Promedio de consumo horario según datos disponibles\n")
-
-    for viv, cfg in unificaciones.items():
-        path_csv = os.path.join(data_folder_conv, viv, cfg["archivo_salida"])
-
-        if not os.path.exists(path_csv):
-            continue
-
-        df_h, df_prom = calcular_promedio_consumo_horario_disponible(path_csv)
-
-        if df_prom is None or df_prom.empty:
-            print(f"⚠️ {viv}: aún no hay datos suficientes para calcular consumos horarios.")
-            continue
-
-        print(f"🏠 {viv} — {cfg['archivo_salida']}")
-
-        tabla = df_prom[[
-            "hora",
-            "consumo_promedio_Wh",
-            "consumo_promedio_kWh",
-            "n_observaciones"
-        ]].copy()
-
-        tabla["consumo_promedio_Wh"] = tabla["consumo_promedio_Wh"].round(2)
-        tabla["consumo_promedio_kWh"] = tabla["consumo_promedio_kWh"].round(4)
-
-        display(tabla)
-
-        plt.figure(figsize=(11, 4))
-        plt.plot(
-            df_prom["hora"],
-            df_prom["consumo_promedio_kWh"],
-            marker="o",
-            linewidth=2
-        )
-        plt.title(f"Promedio de consumo horario disponible - {viv}")
-        plt.xlabel("Hora del día")
-        plt.ylabel("Consumo promedio [kWh]")
-        plt.xticks(rotation=45, ha="right")
-        plt.grid(True, alpha=0.3)
-        plt.tight_layout()
-        plt.show()
 
 # ======================================================================================
 # 11) LOOP PRINCIPAL DE MONITOREO
