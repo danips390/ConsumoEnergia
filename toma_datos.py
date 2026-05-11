@@ -131,8 +131,9 @@ def graficar_estado_actual(data_folder_conv, viviendas):
         data_folder_conv=data_folder_conv,
         unificaciones=UNIFICACIONES
     )
-
-
+def ensure_folder(path):
+    """Crea una carpeta si no existe. """
+    os.makedirs(path, exist_ok=True)
 # ======================================================================================
 # 3) CONFIGURACIÓN GENERAL DEL PROGRAMA
 # ======================================================================================
@@ -364,11 +365,7 @@ def now_str():
     return datetime.now(TZ_LOCAL).strftime("%Y-%m-%d %H:%M:%S")
 
 
-def ensure_folder(path):
-    """
-    Crea una carpeta si no existe.
-    """
-    os.makedirs(path, exist_ok=True)
+
 
 
 def _looks_like_token_issue(resp=None, exc: Exception = None) -> bool:
