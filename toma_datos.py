@@ -96,41 +96,6 @@ GRAFICAR_CADA_N_RONDAS = 5
 _ronda = 0
 
 
-def graficar_estado_actual(data_folder_conv, viviendas):
-    clear_output(wait=True)
-    print("📈 Gráficas (actualización en vivo) — leyendo CSV CONVERTIDOS...\n")
-
-    archivos_unificados = {cfg["archivo_salida"] for cfg in UNIFICACIONES.values()}
-
-    for viv in viviendas.keys():
-        viv_folder = os.path.join(data_folder_conv, viv)
-
-        if not os.path.isdir(viv_folder):
-            continue
-
-        archivos = [
-            f for f in os.listdir(viv_folder)
-            if f.endswith(".csv")
-            and f not in archivos_unificados
-            and not f.endswith("_tabla.csv")
-        ]
-
-        if not archivos:
-            continue
-
-        print(f"🏠 {viv}")
-
-        for archivo in sorted(archivos):
-            # aquí queda tu código actual de gráficas por sensor
-            pass
-
-        print()
-
-    # Esta parte va una sola vez, no dentro del ciclo de sensores
-    graficar_promedios_consumo_horario_disponible(
-        data_folder_conv=data_folder_conv,
-        unificaciones=UNIFICACIONES
-    )
 def ensure_folder(path):
     """Crea una carpeta si no existe. """
     os.makedirs(path, exist_ok=True)
