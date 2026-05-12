@@ -12,9 +12,9 @@
       },
       "properties": {
         "id_punto": "25.658491_-100.291636",
-        "n_registros": 1,
-        "timestamp_ultimo": "2026-05-12 14:40:00",
-        "timestamp_penultimo": null,
+        "n_registros": 2,
+        "timestamp_ultimo": "2026-05-12 14:46:00",
+        "timestamp_penultimo": "2026-05-12 14:40:00",
         "voltage_V_A": 0,
         "current_A_A": 0,
         "power_W_A": 1.9,
@@ -22,7 +22,7 @@
         "freq_Hz_A": 0,
         "energy_Wh_A": 0,
         "energy_reverse_Wh_A": null,
-        "energy_Wh_A_delta_ultimas_2": null,
+        "energy_Wh_A_delta_ultimas_2": 0,
         "energy_reverse_Wh_A_delta_ultimas_2": null,
         "voltage_V_B": 0,
         "current_A_B": 1.885,
@@ -31,7 +31,7 @@
         "freq_Hz_B": 0,
         "energy_Wh_B": 0,
         "energy_reverse_Wh_B": null,
-        "energy_Wh_B_delta_ultimas_2": null,
+        "energy_Wh_B_delta_ultimas_2": 0,
         "energy_reverse_Wh_B_delta_ultimas_2": null,
         "voltage_V_C": null,
         "current_A_C": null,
@@ -51,7 +51,7 @@
         "energy_reverse_Wh_D": null,
         "energy_Wh_D_delta_ultimas_2": null,
         "energy_reverse_Wh_D_delta_ultimas_2": null,
-        "energy_Wh_delta_total_ultimas_2": null,
+        "energy_Wh_delta_total_ultimas_2": 0,
         "energy_reverse_Wh_delta_total_ultimas_2": null
       }
     }

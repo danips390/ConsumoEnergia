@@ -1,2 +1,3 @@
 ﻿latitud,longitud,timestamp,day,month,year,hour,minute,voltage_V_A,current_A_A,power_W_A,pf_A,freq_Hz_A,energy_Wh_A,voltage_V_B,current_A_B,power_W_B,pf_B,freq_Hz_B,energy_Wh_B,voltage_V_C,current_A_C,power_W_C,pf_C,freq_Hz_C,energy_Wh_C,voltage_V_D,current_A_D,power_W_D,pf_D,freq_Hz_D,energy_Wh_D,id_punto
 25.657228,-100.291879,2026-05-12 14:40:00,12,5,2026,14,40,120.9,1.108,130.5,0.97,59.09,90030,0,0.628,9.4,0.12,59.09,60710,120.6,3.907,372.2,0.78,59.21,80300,0,0,0,1,59.21,0,25.657228_-100.291879
+25.657228,-100.291879,2026-05-12 14:46:00,12,5,2026,14,46,120.8,1.066,125.3,0.97,59.07,90040,0,0.621,8.2,0.1,59.07,60710,120.1,6.266,713.8,0.94,59.21,80330,0,0,0,1,59.21,0,25.657228_-100.291879
