@@ -12,9 +12,9 @@
       },
       "properties": {
         "id_punto": "25.664247_-100.293495",
-        "n_registros": 175,
-        "timestamp_ultimo": "2026-05-11 21:59:00",
-        "timestamp_penultimo": "2026-05-11 17:59:00",
+        "n_registros": 176,
+        "timestamp_ultimo": "2026-05-12 00:44:00",
+        "timestamp_penultimo": "2026-05-11 21:59:00",
         "voltage_V_A": 126.3,
         "current_A_A": 2.914,
         "power_W_A": 311,
@@ -62,9 +62,10 @@
         "consume16_17": 41.19,
         "consume17_18": 0.0,
         "consume21_22": 0.0,
+        "consume0_1": 0.0,
         "consumo_ultimo_dia_kWh": 41.19,
         "timestamp_inicio_consumos": "2026-05-11 04:00:00",
-        "timestamp_fin_consumos": "2026-05-11 21:00:00"
+        "timestamp_fin_consumos": "2026-05-12 00:00:00"
       }
     }
   ]
