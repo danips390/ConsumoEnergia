@@ -1526,7 +1526,7 @@ try:
     # -----------------------------------------------------------------
     _ronda += 1
 
-    graficar_estado_actual(DATA_CONV_FOLDER, VIVIENDAS)
+    
 
     # -----------------------------------------------------------------
     # EXPORTACIÓN A GEOJSON POR CADA MEDIDOR UNIFICADO
