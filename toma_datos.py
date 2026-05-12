@@ -70,7 +70,7 @@ y posterior análisis de consumo energético.
 # 1) INSTALACIÓN E IMPORTACIÓN DE LIBRERÍAS
 # ======================================================================================
 
-pip install tuya-connector-python pandas matplotlib openpyxl
+
 
 import os
 import csv
