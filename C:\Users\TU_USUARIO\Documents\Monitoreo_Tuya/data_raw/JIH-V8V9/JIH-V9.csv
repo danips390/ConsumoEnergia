@@ -1,3 +1,4 @@
 timestamp,power_a,direction_a,tbd,direction_b,power_b,energy_forword_a,energy_reverse_a,energy_forword_b,energy_reserse_b,power_factor,freq,voltage_a,current_a,current_b,total_power,voltage_coef,current_a_calibration,power_a_calibration,energy_a_calibration_fwd,coef_a_reset,power_factor_b,freq_calibration,current_b_calibration,power_b_calibration,energy_b_calibration_fwd,coef_b_reset,energy_a_calibration_rev,energy_b_calibration_rev,report_rate_control,forward_energy_total,reverse_energy_total
 2026-05-12 14:40:49,45,FORWARD,False,FORWARD,46,2041,0,2160,0,78,5892,1231,46,50,91,1000,1000,1000,1000,False,75,1000,1000,1000,1000,False,1000,1000,10,4201,0
 2026-05-12 14:46:00,44,FORWARD,False,FORWARD,46,2041,0,2160,0,79,5895,1227,46,50,90,1000,1000,1000,1000,False,75,1000,1000,1000,1000,False,1000,1000,10,4201,0
+2026-05-12 16:12:42,44,FORWARD,False,FORWARD,46,2041,0,2160,0,77,5896,1221,46,50,90,1000,1000,1000,1000,False,76,1000,1000,1000,1000,False,1000,1000,10,4201,0
