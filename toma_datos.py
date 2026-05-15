@@ -167,7 +167,7 @@ TZ_LOCAL = ZoneInfo("America/Monterrey")
 # -----------------------------------------------------------------------------
 #from google.colab import drive
 
-MOUNT_POINT = "C:\Users\Angel\Desktop"
+MOUNT_POINT = r"C:\Users\Angel\Desktop"
 
 if not os.path.ismount(MOUNT_POINT):
     drive.mount(MOUNT_POINT)
