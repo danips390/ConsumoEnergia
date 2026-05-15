@@ -15,7 +15,7 @@ Original file is located at
 """
 Monitoreo integrado de energía con sensores Tuya.
 
-OBJETIVO GENERAL
+OBJETIVO GENERAL D
 ----------------
 Este script consulta periódicamente la API de Tuya para leer datos de distintos medidores
 instalados en varias viviendas. Después de obtener los datos, guarda dos versiones:
