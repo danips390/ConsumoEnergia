@@ -15,7 +15,7 @@ Original file is located at
 """
 Monitoreo integrado de energía con sensores Tuya.
 
-OBJETIVO GENERAL
+OBJETIVO GENERAL D
 ----------------
 Este script consulta periódicamente la API de Tuya para leer datos de distintos medidores
 instalados en varias viviendas. Después de obtener los datos, guarda dos versiones:
@@ -185,6 +185,9 @@ VIVIENDAS = {
     "JIH-V13": {
         "JIH-V13": {"tipo": "V3_DUAL", "device_id": "eb002989b087b9cb26kc6u"},
     },
+    "JIH-V17": {
+        "JIH-V17": {"tipo": "V3_DUAL", "device_id": "eb96804b85b6bbf9dfcwwo"},
+    },
 }
 
 # ======================================================================================
@@ -297,6 +300,13 @@ UNIFICACIONES = {
         "fase_B": "JIH-V13B",
         "latitud": 25.658490931076255,
         "longitud": -100.29163647466169,
+    },
+    "JIH-V17": {
+        "archivo_salida": "JIH-V17.csv",
+        "fase_A": "JIH-V17A",
+        "fase_B": "JIH-V17B",
+        "latitud": 25.691260921148125,
+        "longitud": -100.2931423226392,
     },
 }
 
