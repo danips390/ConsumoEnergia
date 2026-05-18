@@ -1,3 +1,4 @@
 timestamp,forward_energy_total,reverse_energy_total,power_total,forward_energy_1,forward_energy_2,reverse_energy_1,reverse_energy_2,cur_voltage,current_a,current_b,power_a,power_b,power_factor_a,power_factor_b,power_setting_a,power_setting_b,power_alarm_a,power_alarm_b,forward_energy_a_hour,forward_energy_b_hour,forward_energy_total_hour,reverse_energy_a_hour,reverse_energy_b_hour,reverse_energy_total_hour,forward_energy_a,reverse_energy_a,forward_energy_b,reverse_energy_b,voltage_calibration,current_a_calibration,current_b_calibration,power_a_calibration,power_b_calibration
 2026-05-18 10:33:13,15967,0,2047,4203,657,0,0,1231,1312,483,1550,497,94,94,500,500,False,False,3,1,4,0,0,0,13534,0,2433,0,0,0,0,0,0
 2026-05-18 12:14:38,16004,0,2601,4231,666,0,0,1219,1560,807,1849,752,97,76,500,500,False,False,3,1,4,0,0,0,13562,0,2442,0,0,0,0,0,0
+2026-05-18 14:05:10,16038,0,2164,4254,677,0,0,1232,1382,481,1667,497,97,83,500,500,False,False,0,0,0,0,0,0,13585,0,2453,0,0,0,0,0,0
