@@ -188,6 +188,15 @@ VIVIENDAS = {
     "JIH-V17": {
         "JIH-V17": {"tipo": "V3_DUAL", "device_id": "eb96804b85b6bbf9dfcwwo"},
     },
+    "JIH-V15": {
+        "JIH-V15": {"tipo": "V3_DUAL", "device_id": "ebf4d1eb493b9e8d22qwc9"},
+    },
+    "JIH-20": {
+        "JIH-V20": {"tipo": "V3_DUAL", "device_id": "ebfc9a705136dc17d0hxim"},
+    },
+    "JIH-12": {
+        "JIH-V12": {"tipo": "V3_DUAL", "device_id": "ebf3fa1bd44953231fyvhl"},
+    },
 }
 
 # ======================================================================================
@@ -307,6 +316,20 @@ UNIFICACIONES = {
         "fase_B": "JIH-V17B",
         "latitud": 25.691260921148125,
         "longitud": -100.2931423226392,
+    },
+    "JIH-V15": {
+        "archivo_salida": "JIH-V15.csv",
+        "fase_A": "JIH-V15A",
+        "fase_B": "JIH-V15B",
+        "latitud": 25.650767263435355,
+        "longitud": -100.27804810312976,
+    },
+    "JIH-V12": {
+        "archivo_salida": "JIH-V12.csv",
+        "fase_A": "JIH-V12A",
+        "fase_B": "JIH-V12B",
+        "latitud": 25.642266918435354,
+        "longitud": -100.27299690823854,
     },
 }
 
