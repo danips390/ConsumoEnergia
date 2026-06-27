@@ -12,9 +12,9 @@
       },
       "properties": {
         "id_punto": "25.664247_-100.293495",
-        "n_registros": 448,
-        "timestamp_ultimo": "2026-06-27 12:49:00",
-        "timestamp_penultimo": "2026-06-27 11:33:00",
+        "n_registros": 449,
+        "timestamp_ultimo": "2026-06-27 14:08:00",
+        "timestamp_penultimo": "2026-06-27 12:49:00",
         "voltage_V_A": 128.0,
         "current_A_A": 4.775,
         "power_W_A": 557.0,
@@ -22,7 +22,7 @@
         "freq_Hz_A": 58.95,
         "energy_Wh_A": 1012400,
         "energy_reverse_Wh_A": null,
-        "energy_Wh_A_delta_ultimas_2": 780,
+        "energy_Wh_A_delta_ultimas_2": 0,
         "energy_reverse_Wh_A_delta_ultimas_2": null,
         "voltage_V_B": 0,
         "current_A_B": 1.428,
@@ -31,7 +31,7 @@
         "freq_Hz_B": 58.95,
         "energy_Wh_B": 754860,
         "energy_reverse_Wh_B": null,
-        "energy_Wh_B_delta_ultimas_2": 330,
+        "energy_Wh_B_delta_ultimas_2": 0,
         "energy_reverse_Wh_B_delta_ultimas_2": null,
         "voltage_V_C": null,
         "current_A_C": null,
@@ -51,9 +51,8 @@
         "energy_reverse_Wh_D": null,
         "energy_Wh_D_delta_ultimas_2": null,
         "energy_reverse_Wh_D_delta_ultimas_2": null,
-        "energy_Wh_delta_total_ultimas_2": 1110,
+        "energy_Wh_delta_total_ultimas_2": 0,
         "energy_reverse_Wh_delta_total_ultimas_2": null,
-        "consume15_16_Wh": 780.0,
         "consume16_17_Wh": 790.0,
         "consume18_19_Wh": 890.0,
         "consume22_23_Wh": 2190.0,
@@ -65,9 +64,10 @@
         "consume10_11_Wh": 970.0,
         "consume11_12_Wh": 1250.0,
         "consume12_13_Wh": 1110.0,
-        "consumo_ultimo_dia_Wh": 14740.0,
-        "timestamp_inicio_consumos": "2026-06-26 15:00:00",
-        "timestamp_fin_consumos": "2026-06-27 12:00:00"
+        "consume14_15_Wh": 0.0,
+        "consumo_ultimo_dia_Wh": 13960.0,
+        "timestamp_inicio_consumos": "2026-06-26 16:00:00",
+        "timestamp_fin_consumos": "2026-06-27 14:00:00"
       }
     }
   ]
