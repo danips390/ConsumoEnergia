@@ -12,9 +12,9 @@
       },
       "properties": {
         "id_punto": "25.618982_-100.29505",
-        "n_registros": 977,
-        "timestamp_ultimo": "2026-07-31 14:06:00",
-        "timestamp_penultimo": "2026-07-31 12:25:00",
+        "n_registros": 978,
+        "timestamp_ultimo": "2026-07-31 15:31:00",
+        "timestamp_penultimo": "2026-07-31 14:06:00",
         "voltage_V_A": 131.6,
         "current_A_A": 3.774,
         "power_W_A": 377.7,
@@ -23,7 +23,7 @@
         "energy_Wh_A": 98153,
         "energy_reverse_Wh_A": 47203,
         "energy_Wh_A_delta_ultimas_2": 0,
-        "energy_reverse_Wh_A_delta_ultimas_2": 164,
+        "energy_reverse_Wh_A_delta_ultimas_2": 0,
         "direction_A": "REVERSE",
         "voltage_V_B": 131.6,
         "current_A_B": 5.038,
@@ -32,7 +32,7 @@
         "freq_Hz_B": 58.85,
         "energy_Wh_B": 54552,
         "energy_reverse_Wh_B": 79353,
-        "energy_Wh_B_delta_ultimas_2": 178,
+        "energy_Wh_B_delta_ultimas_2": 0,
         "energy_reverse_Wh_B_delta_ultimas_2": 0,
         "direction_B": "FORWARD",
         "voltage_V_C": null,
@@ -53,9 +53,8 @@
         "energy_reverse_Wh_D": null,
         "energy_Wh_D_delta_ultimas_2": null,
         "energy_reverse_Wh_D_delta_ultimas_2": null,
-        "energy_Wh_delta_total_ultimas_2": 178,
-        "energy_reverse_Wh_delta_total_ultimas_2": 164,
-        "consume16_17_Wh": 149.0,
+        "energy_Wh_delta_total_ultimas_2": 0,
+        "energy_reverse_Wh_delta_total_ultimas_2": 0,
         "consume17_18_Wh": 148.0,
         "consume19_20_Wh": 250.0,
         "consume22_23_Wh": 384.0,
@@ -66,9 +65,10 @@
         "consume10_11_Wh": 63.0,
         "consume12_13_Wh": 46.0,
         "consume14_15_Wh": 178.0,
-        "consumo_ultimo_dia_Wh": 2296.0,
-        "timestamp_inicio_consumos": "2026-07-30 16:00:00",
-        "timestamp_fin_consumos": "2026-07-31 14:00:00"
+        "consume15_16_Wh": 0.0,
+        "consumo_ultimo_dia_Wh": 2147.0,
+        "timestamp_inicio_consumos": "2026-07-30 17:00:00",
+        "timestamp_fin_consumos": "2026-07-31 15:00:00"
       }
     }
   ]
