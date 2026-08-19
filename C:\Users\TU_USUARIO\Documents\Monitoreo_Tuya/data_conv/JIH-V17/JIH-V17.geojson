@@ -12,12 +12,12 @@
       },
       "properties": {
         "id_punto": "25.691261_-100.293142",
-        "n_registros": 1224,
-        "timestamp_ultimo": "2026-08-19 12:38:00",
-        "timestamp_penultimo": "2026-08-19 11:56:00",
+        "n_registros": 1225,
+        "timestamp_ultimo": "2026-08-19 13:06:00",
+        "timestamp_penultimo": "2026-08-19 12:38:00",
         "voltage_V_A": 0,
-        "current_A_A": 1.401,
-        "power_W_A": 171.9,
+        "current_A_A": 1.395,
+        "power_W_A": 170.8,
         "pf_A": 0,
         "freq_Hz_A": 0,
         "energy_Wh_A": 0,
@@ -25,9 +25,9 @@
         "energy_Wh_A_delta_ultimas_2": 0,
         "energy_reverse_Wh_A_delta_ultimas_2": null,
         "voltage_V_B": 0,
-        "current_A_B": 0.523,
-        "power_W_B": 49.8,
-        "pf_B": 0.75,
+        "current_A_B": 0.139,
+        "power_W_B": 14.2,
+        "pf_B": 0.8,
         "freq_Hz_B": 0,
         "energy_Wh_B": 0,
         "energy_reverse_Wh_B": null,
@@ -75,9 +75,10 @@
         "consume10_11_Wh": 0.0,
         "consume11_12_Wh": 0.0,
         "consume12_13_Wh": 0.0,
+        "consume13_14_Wh": 0.0,
         "consumo_ultimo_dia_Wh": 0.0,
         "timestamp_inicio_consumos": "2026-08-18 14:00:00",
-        "timestamp_fin_consumos": "2026-08-19 12:00:00"
+        "timestamp_fin_consumos": "2026-08-19 13:00:00"
       }
     }
   ]
