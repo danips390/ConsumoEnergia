@@ -12,9 +12,9 @@
       },
       "properties": {
         "id_punto": "25.658491_-100.291636",
-        "n_registros": 1406,
-        "timestamp_ultimo": "2026-08-22 13:01:00",
-        "timestamp_penultimo": "2026-08-22 12:30:00",
+        "n_registros": 1407,
+        "timestamp_ultimo": "2026-08-22 13:40:00",
+        "timestamp_penultimo": "2026-08-22 13:01:00",
         "voltage_V_A": 0,
         "current_A_A": 0,
         "power_W_A": 1.9,
